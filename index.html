@@ -5,81 +5,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emanuel Sosa (NEMS) | Portafolio Profesional</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos Phosphor para un look minimalista -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">NEMS<span>.</span></div>
         <ul class="nav-links">
             <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#educacion">Educación</a></li>
             <li><a href="#software">Software</a></li>
             <li><a href="#publicaciones">Publicaciones</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#emprendimientos">Emprendimientos</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
+    <header class="hero animate-on-scroll">
         <div class="hero-content">
             <h1>Emanuel Matías Sosa</h1>
-            <h2>Tecnología de los Alimentos & Desarrollo Web</h2>
-            <p>Optimizando la industria alimentaria a través de la calidad, la logística (BPM, HACCP, ISO) y la automatización digital con Inteligencia Artificial.</p>
+            <h2 class="teal-text">Tecnología de los Alimentos & Desarrollo de Software</h2>
+            <p>Especialista en HSEQ (ISO 9001/14001/45001), BPM y HACCP. Fusiono la calidad industrial y logística con la automatización digital mediante Inteligencia Artificial, Google Apps Script y React.</p>
             <div class="hero-buttons">
-                <a href="#software" class="btn btn-primary">Ver Proyectos</a>
-                <a href="TU_CV_PDF_LINK" target="_blank" class="btn btn-secondary">Descargar CV</a>
+                <a href="#software" class="btn btn-primary">Explorar Proyectos</a>
+                <!-- Reemplaza con tu link de LinkedIn -->
+                <a href="https://www.linkedin.com/in/emanuel-sosa-rec" target="_blank" class="btn btn-secondary"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                <!-- Reemplaza con el link a tu PDF -->
+                <a href="Emanuel_Sosa_CV.pdf" target="_blank" class="btn btn-outline"><i class="ph ph-download-simple"></i> Descargar CV</a>
             </div>
         </div>
     </header>
 
-    <section id="experiencia" class="section">
-        <h2 class="section-title">Experiencia y Logística Industrial</h2>
-        <div class="grid-container">
-            <div class="card">
-                <h3>Operador de Logística y Producto Terminado</h3>
-                <p class="subtitle">Grupo Arcor (Plantas Carlisa y Alica)</p>
-                <p>Gestión de movimientos de inventario, escaneo de pallets, reportes de stock y operaciones de depósito utilizando el sistema ERP JD Edwards. Enfoque en procesos estandarizados y trazabilidad.</p>
+    <section id="experiencia" class="section animate-on-scroll">
+        <h2 class="section-title">Experiencia Industrial y Logística</h2>
+        <div class="timeline">
+            <div class="timeline-item card">
+                <div class="timeline-date">Jul 2026 - Sep 2026</div>
+                <h3>Aduana de Producto Terminado & Brigadista de Seguridad</h3>
+                <p class="subtitle teal-text">Arcor S.A.I.C (Planta Carlisa)</p>
+                <ul>
+                    <li>Declaración de producción terminada y control de stock mediante inventarios periódicos.</li>
+                    <li>Garantía de trazabilidad en línea de producción y mantenimiento de KPI bajo criterios 5S.</li>
+                    <li>Operación en turnos rotativos sin desvíos registrados.</li>
+                </ul>
             </div>
-            <!-- Puedes clonar esta tarjeta para añadir más experiencias -->
-        </div>
-    </section>
-
-    <section id="software" class="section bg-light">
-        <h2 class="section-title">Ecosistema de Software y Automatización</h2>
-        <div class="grid-container">
-            <div class="card project-card">
-                <h3>NovaDesk & NovaScore</h3>
-                <p>Plataforma de organización académica para estudiantes y sistema interactivo de tableros de pádel con bases de datos en Firebase.</p>
-                <span class="tag">JavaScript</span> <span class="tag">Firebase</span>
-            </div>
-            <div class="card project-card">
-                <h3>NEMS-AI & AI Job Hunter</h3>
-                <p>Interfaces de inteligencia artificial personalizadas, simuladores de entrevistas y generación de CVs integrando procesamiento multimodal.</p>
-                <span class="tag">React</span> <span class="tag">IA APIs</span>
+            <div class="timeline-item card">
+                <div class="timeline-date">Jul 2023 - Feb 2024</div>
+                <h3>Operario de Producción & Brigadista de Seguridad</h3>
+                <p class="subtitle teal-text">Arcor S.A.I.C (Plantas Carlisa y Alica)</p>
+                <ul>
+                    <li>100% de cumplimiento en controles de BPM y POES durante temporada alta.</li>
+                    <li>Aseguramiento de trazabilidad y continuidad operativa bajo normativas de mejora continua.</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="publicaciones" class="section">
-        <h2 class="section-title">Autoría, Calidad e IA</h2>
+    <section id="educacion" class="section bg-light animate-on-scroll">
+        <h2 class="section-title">Educación y Certificaciones</h2>
+        <div class="grid-container">
+            <div class="card cert-card">
+                <i class="ph ph-graduation-cap icon-large teal-text"></i>
+                <h3>Tecnicatura Superior en Tecnología de los Alimentos</h3>
+                <p class="subtitle">I.E.S. Recreo | 2024 - Presente (Último Año)</p>
+                <p>Foco en inocuidad, trazabilidad y optimización de procesos alimentarios.</p>
+            </div>
+            <div class="card cert-card">
+                <i class="ph ph-certificate icon-large teal-text"></i>
+                <h3>Certificaciones HSEQ e Inocuidad</h3>
+                <ul class="cert-list">
+                    <li>Diplomado en Sistemas Integrados HSEQ ISO 9001, 14001, 45001 (CIL, Colombia)</li>
+                    <li>BPM / GMP y Bromatología (UTN)</li>
+                    <li>Auxiliar en Seguridad e Higiene (UTN) & Fundación YPF</li>
+                </ul>
+            </div>
+            <div class="card cert-card">
+                <i class="ph ph-cpu icon-large teal-text"></i>
+                <h3>Tecnología e IA</h3>
+                <ul class="cert-list">
+                    <li>Consultoría en IA para Empresas (Becas Digitalers - Telecom)</li>
+                    <li>Implementación de Soluciones IA para Empresas (DataCamp)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="software" class="section animate-on-scroll">
+        <h2 class="section-title">Ecosistema de Software y Apps</h2>
+        <div class="grid-container">
+            <!-- Proyecto 1 -->
+            <div class="card project-card">
+                <!-- AQUÍ SUBES TU CAPTURA -->
+                <div class="img-container">
+                    <img src="ruta-a-tu-imagen/nems-ai.jpg" alt="Interfaz de NEMS-AI" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>NEMS-AI & AI Job Hunter Studio</h3>
+                    <p>Interfaces multimodales de IA. Plataforma de desarrollo profesional con escáner ATS, simulador de entrevistas y chatbot en modo oscuro.</p>
+                    <div class="tags">
+                        <span class="tag">React</span> <span class="tag">IA APIs</span> <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="card project-card">
+                <!-- AQUÍ SUBES TU CAPTURA -->
+                <div class="img-container">
+                    <img src="ruta-a-tu-imagen/novascore.jpg" alt="Interfaz de NovaScore" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>NovaScore & NovaDesk</h3>
+                    <p>Tablero digital interactivo para torneos de pádel y plataforma de gestión académica para estudiantes. Desarrollo full-stack.</p>
+                    <div class="tags">
+                        <span class="tag">Google Apps Script</span> <span class="tag">Firebase</span> <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+            </div>
+             <!-- Proyecto 3 -->
+             <div class="card project-card">
+                <!-- AQUÍ SUBES TU CAPTURA -->
+                <div class="img-container">
+                    <img src="ruta-a-tu-imagen/foodcheck.jpg" alt="FOODCHECK Argentina" class="project-img">
+                </div>
+                <div class="project-content">
+                    <h3>FoodCheck Web & Automatizaciones</h3>
+                    <p>Landing pages y web apps interactivas de concientización alimentaria, calculadoras microbianas y workflows automatizados.</p>
+                    <div class="tags">
+                        <span class="tag">n8n</span> <span class="tag">GitHub Pages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publicaciones" class="section bg-light animate-on-scroll">
+        <h2 class="section-title">Autoría, Calidad e IA Aplicada</h2>
         <div class="grid-container">
             <div class="card">
+                <i class="ph ph-book-open icon-large teal-text"></i>
                 <h3>Manuales de Inocuidad</h3>
-                <p>Autor de <i>"Tu Cocina en Regla"</i> y el e-book <i>"De la Cocina al Éxito"</i>, guías definitivas para emprendimientos gastronómicos seguros basados en normas POES y BPM.</p>
+                <p>Autor de <strong>"Tu Cocina en Regla"</strong> y el e-book <strong>"De la Cocina al Éxito"</strong>. Guías definitivas enfocadas en emprendedores gastronómicos para el cumplimiento de normativas POES y BPM.</p>
             </div>
             <div class="card">
-                <h3>Cursos: IA en la Industria Alimentaria</h3>
-                <p>Trilogía de cursos sobre la implementación de sistemas de IA (ISO 42001) y la modernización del sistema HACCP mediante herramientas digitales.</p>
+                <i class="ph ph-chalkboard-teacher icon-large teal-text"></i>
+                <h3>Trilogía de Cursos IA & HACCP</h3>
+                <p>Desarrollo de capacitaciones sobre la modernización de sistemas HACCP mediante IA y la implementación de sistemas de gestión ISO 42001 en la industria del procesamiento de alimentos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="emprendimientos" class="section animate-on-scroll">
+        <h2 class="section-title">Diseño y Emprendimientos</h2>
+        <div class="grid-container">
+            <div class="card project-card">
+                <div class="project-content">
+                    <h3>Polyfan Tech</h3>
+                    <p>Negocio propio de fabricación de cartelería corpórea 3D en polyfan mediante corte CNC por hilo caliente. Diseño vectorial e identidad visual para marcas locales.</p>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="project-content">
+                    <h3>NovaBit Media Agency</h3>
+                    <p>Diseño y desarrollo web corporativo. Creación de identidad de marca, flyers y soluciones digitales a medida (ej: App digital de invitaciones interactivas).</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="contacto">
-        <h2>Impulsemos tu próximo proyecto industrial o digital</h2>
-        <p>Radicado en Recreo, Catamarca | Disponible para proyectos remotos</p>
+        <h2>Conectemos</h2>
+        <p>Recreo, Catamarca | nems@hotmail.com.ar | 3832438065</p>
         <div class="social-links">
-            <a href="TU_LINKEDIN" target="_blank">LinkedIn</a>
-            <a href="TU_GITHUB" target="_blank">GitHub</a>
-            <a href="mailto:TU_CORREO">Email</a>
+            <a href="https://www.linkedin.com/in/emanuel-sosa-rec" target="_blank"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+            <a href="mailto:nems@hotmail.com.ar"><i class="ph ph-envelope"></i> Correo</a>
         </div>
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: #cbd5e1;">© 2026 Emanuel Sosa (NEMS). Desarrollado a medida.</p>
     </footer>
+
+    <!-- Script para animaciones al hacer scroll -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach((elem) => {
+            observer.observe(elem);
+        });
+    </script>
 </body>
 </html>
